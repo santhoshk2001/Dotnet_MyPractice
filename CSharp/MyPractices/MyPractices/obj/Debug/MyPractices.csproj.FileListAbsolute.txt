@@ -1,0 +1,7 @@
+C:\Users\santhoshke\Batch_June24\CSharp\MyPractices\MyPractices\bin\Debug\MyPractices.exe.config
+C:\Users\santhoshke\Batch_June24\CSharp\MyPractices\MyPractices\bin\Debug\MyPractices.exe
+C:\Users\santhoshke\Batch_June24\CSharp\MyPractices\MyPractices\bin\Debug\MyPractices.pdb
+C:\Users\santhoshke\Batch_June24\CSharp\MyPractices\MyPractices\obj\Debug\MyPractices.csproj.AssemblyReference.cache
+C:\Users\santhoshke\Batch_June24\CSharp\MyPractices\MyPractices\obj\Debug\MyPractices.csproj.CoreCompileInputs.cache
+C:\Users\santhoshke\Batch_June24\CSharp\MyPractices\MyPractices\obj\Debug\MyPractices.exe
+C:\Users\santhoshke\Batch_June24\CSharp\MyPractices\MyPractices\obj\Debug\MyPractices.pdb

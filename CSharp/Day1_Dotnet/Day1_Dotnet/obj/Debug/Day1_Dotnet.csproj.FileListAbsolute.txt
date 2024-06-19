@@ -1,0 +1,7 @@
+C:\Users\santhoshke\Batch_June24\CSharp\Day1_Dotnet\Day1_Dotnet\bin\Debug\Day1_Dotnet.exe.config
+C:\Users\santhoshke\Batch_June24\CSharp\Day1_Dotnet\Day1_Dotnet\bin\Debug\Day1_Dotnet.exe
+C:\Users\santhoshke\Batch_June24\CSharp\Day1_Dotnet\Day1_Dotnet\bin\Debug\Day1_Dotnet.pdb
+C:\Users\santhoshke\Batch_June24\CSharp\Day1_Dotnet\Day1_Dotnet\obj\Debug\Day1_Dotnet.csproj.AssemblyReference.cache
+C:\Users\santhoshke\Batch_June24\CSharp\Day1_Dotnet\Day1_Dotnet\obj\Debug\Day1_Dotnet.csproj.CoreCompileInputs.cache
+C:\Users\santhoshke\Batch_June24\CSharp\Day1_Dotnet\Day1_Dotnet\obj\Debug\Day1_Dotnet.exe
+C:\Users\santhoshke\Batch_June24\CSharp\Day1_Dotnet\Day1_Dotnet\obj\Debug\Day1_Dotnet.pdb

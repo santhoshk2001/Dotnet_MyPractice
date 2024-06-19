@@ -1,0 +1,84 @@
+C Sharp Basics : C# is a modern, general-purpose object oriented programming lang developed by Microsoft.
+- was developed by Anders Hejlsberg and his team during the development of dot net framework
+- is designed for common lang infrastructure(CLI), which consists of the executable code and runtime environment that can allow usage of various high-level languages on different computer platforms and architecture
+
+
+Namespace :
+ - are a logical way to organize our programs
+ - it is a collection of classes, interfaces, events, delegates, structures, Enums and also other namespaces
+
+Data Types : are basically either
+  1. Value Type: All primitive/fundamental/integral/systemic datatypes are value types (int, char, float....) 
+
+     - Value types are derived from System.ValueType
+     - Value Type variables store data directly
+     - Value types are stored in Stack memory 
+
+  2. Reference Type: All objects of classes, interfaces, delegates, Arrays 
+
+   - Contains address/reference of the memory where data is stored
+   - Reference types are stored in Heap memory
+   - String and Object are predefined reference types
+
+Literals in C# :
+  1. Integer 
+  2. String
+  3. Character
+  4. Real 
+  5. Boolean 
+  6. Null 
+
+
+short byte
+byte
+int  4 bytes
+long
+float 8 bytes
+double  16 bytes
+decimal
+
+char
+
+Type Conversions :
+1. Implicit - lower data to a higher data  (50 ml into 100 ml)
+2. Explicit - higher data to a lower data (100 ml into 50 ml -- data loss)
+   - type casting  
+   - conversion functions
+
+parse and tryparse():
+--------------------
+
+parse will convert a string to an integer or float depending on the usage
+eg : int x = int.parse("100");  will convert to an int
+     float f = float.parse("100"); will convert to a float
+
+if the passed string has non number values then parse will throw an exception
+- to avoid the parse exception we can use tryParse() that does not throw any exception.
+
+
+Boxing and Unboxing
+
+Boxing : converting a value type to a reference type
+Unboxing : Converting reference type to value type
+
+Concept of Nullable
+All reference types by default are null, as long as they are not made to refer to any valid location
+
+In the same manner we can make the value type also to have null by making the type nullable using '?'
+
+Null coalescing operator '??'
+
+
+
+Functions/methods of a class
+
+static functions - are functions that have only one copy
+- they are maintained and managed by the CLR
+- accessible through out the class
+- does not need any object for invocation
+- can be called by its name ( if static function is in another class, then we can call it by prefixing the class name)
+
+
+non-static function also known as instance function
+- need an object of the class where it is defined
+- every object maintains a separate copy 

@@ -1,0 +1,99 @@
+Methods n Parameters
+
+1. call by value  : when a function is called by passing a copy of the variable. 
+                    Any changes made by the original variable does not affect the receiving variable and vice versa ( x and j as per the demo)
+2. call by reference : when a function is called by passing the reference of a variable.
+                       Any changes made by the original or receiving variable are seen at both places (x, j as per the demo)
+                      uses a keyword 'ref' both at the function declaration and at the function calling
+
+3. out parameters : when the application expects more than one value from a function call, we can use out parameters
+
+4. ParamArray (parameter array) :  'params' is the keyword that helps in giving a variable number of arguments/parameters, an arraylist separated by comma, or no arguments
+ - params keyword should be the last in the method declaration
+ - can have only one params for a function
+public static void get_Skilldata(int age, string name, params string[] skills){  }
+
+   get_skilldata(25,"ABC")
+   get_skilldata(23,"XYZ","C#")
+   get_skilldata(24,"PQR","C#","SQl","Html","Angular")
+
+Statements : Conditional Statements ( if, else, switch)
+             Iteration statements ( do while, while do, for, foreach)
+                 initial counter value, condition and change of counter value  - 3 aspects of any loop
+             Jump Statements (return, break, continue, (goto - label, throw)
+
+Types of Operators :
+ - Arithmetic 
+ - Assignment
+ - Logical   - not, and, or
+ - Relational
+ - Null Coalescing
+ - Misc : sizeof(), typeof()
+
+C# Supports 2 more types viz. 
+   Implicitly typed : variables that can be assigned values of a specific data type
+                      we have to initialize the var types with values during declaration
+                      once initialized, cannot be changed
+                      very useful in receiving return values/iterations etc
+
+   dynamic type  : is reference type that remains dynamic irrespective to the values assigned
+                   no need to initialize at the time of declaration
+                   undergoes boxing and unboxing during runtime (an overhead on the runtime that might cause performance issues)
+                   minimise usage of dynamic objects
+
+
+Arrays : are declared inside System.Array namespace
+
+is a collection of values of same datatype specified with size
+
+There are 3 types of arrays in c#
+
+ Single Dimension
+ Two/Multi dimension
+ Jagged : are often referred to as array of arrays (smart arrays)
+          an element of a jagged array itself is an array
+
+Arrays support many functions and also have various properties
+ viz:
+  sort(), copy(), reverse()
+  length, rank (will return the dimension of the array)
+Array Instantiation :
+ Datatype[] <arrayname> = new datatype[size]
+
+Data type : specifies what type of data is stored
+arrayname indicates the name of the array
+new is a runtime operator to allocate memory
+size indicates number of elements
+
+int[] arr=new int[5];
+string[] words = new string[3];
+
+int[]arr=new int[5]{1,2,3,4,5}; declaring and initializing the array
+int[]arr= new int[]={1,2,3,4,5};
+
+ switching multiple variables 
+
+int intval; string strval; bool boolval;
+
+switch(intval,strval,boolval)
+{
+  case(1,"Sahana",true)
+   c.w("cleared");
+   break;
+  case(2,"Tanmayee",false)
+   c.w("need to attempt"); break;
+  
+ }
+
+
+"expression syntax" of case
+
+string result = (intval,strval,boolval) switch
+{
+  (1,"Sahana",true)=>"cleared",
+  
+  (2,"Tanmayee",false)=>"To attempt",
+  _=>"Default"
+  
+ }
+ 
