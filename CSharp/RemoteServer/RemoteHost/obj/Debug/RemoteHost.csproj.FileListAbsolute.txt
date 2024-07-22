@@ -1,0 +1,10 @@
+C:\Users\santhoshke\Batch_June24\CSharp\RemoteServer\RemoteHost\bin\Debug\RemoteHost.exe.config
+C:\Users\santhoshke\Batch_June24\CSharp\RemoteServer\RemoteHost\bin\Debug\RemoteHost.exe
+C:\Users\santhoshke\Batch_June24\CSharp\RemoteServer\RemoteHost\bin\Debug\RemoteHost.pdb
+C:\Users\santhoshke\Batch_June24\CSharp\RemoteServer\RemoteHost\bin\Debug\RemoteServer.dll
+C:\Users\santhoshke\Batch_June24\CSharp\RemoteServer\RemoteHost\bin\Debug\RemoteServer.pdb
+C:\Users\santhoshke\Batch_June24\CSharp\RemoteServer\RemoteHost\obj\Debug\RemoteHost.csproj.AssemblyReference.cache
+C:\Users\santhoshke\Batch_June24\CSharp\RemoteServer\RemoteHost\obj\Debug\RemoteHost.csproj.CoreCompileInputs.cache
+C:\Users\santhoshke\Batch_June24\CSharp\RemoteServer\RemoteHost\obj\Debug\RemoteHost.csproj.CopyComplete
+C:\Users\santhoshke\Batch_June24\CSharp\RemoteServer\RemoteHost\obj\Debug\RemoteHost.exe
+C:\Users\santhoshke\Batch_June24\CSharp\RemoteServer\RemoteHost\obj\Debug\RemoteHost.pdb

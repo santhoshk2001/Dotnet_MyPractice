@@ -1,0 +1,7 @@
+C:\Users\santhoshke\Batch_June24\ADO\BuildingRelations\BuildingRelations\bin\Debug\BuildingRelations.exe.config
+C:\Users\santhoshke\Batch_June24\ADO\BuildingRelations\BuildingRelations\bin\Debug\BuildingRelations.exe
+C:\Users\santhoshke\Batch_June24\ADO\BuildingRelations\BuildingRelations\bin\Debug\BuildingRelations.pdb
+C:\Users\santhoshke\Batch_June24\ADO\BuildingRelations\BuildingRelations\obj\Debug\BuildingRelations.csproj.AssemblyReference.cache
+C:\Users\santhoshke\Batch_June24\ADO\BuildingRelations\BuildingRelations\obj\Debug\BuildingRelations.csproj.CoreCompileInputs.cache
+C:\Users\santhoshke\Batch_June24\ADO\BuildingRelations\BuildingRelations\obj\Debug\BuildingRelations.exe
+C:\Users\santhoshke\Batch_June24\ADO\BuildingRelations\BuildingRelations\obj\Debug\BuildingRelations.pdb

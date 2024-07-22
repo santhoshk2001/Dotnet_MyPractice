@@ -47,7 +47,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseClassInitialization.cs" />
+    <Compile Include="MethodOverriding.cs" />
     <Compile Include="Multilevel_Inheritance.cs" />
+    <Compile Include="Name_method_Hiding.cs" />
     <Compile Include="OperatorOverloading.cs" />
     <Compile Include="Polymorphism.cs" />
     <Compile Include="Program.cs" />

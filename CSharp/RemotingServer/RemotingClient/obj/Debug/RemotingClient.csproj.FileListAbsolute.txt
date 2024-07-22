@@ -1,0 +1,11 @@
+C:\Users\santhoshke\Batch_June24\CSharp\RemotingServer\RemotingClient\obj\Debug\RemotingClient.csproj.AssemblyReference.cache
+C:\Users\santhoshke\Batch_June24\CSharp\RemotingServer\RemotingClient\obj\Debug\RemotingClient.csproj.CoreCompileInputs.cache
+C:\Users\santhoshke\Batch_June24\CSharp\RemotingServer\RemotingClient\bin\Debug\RemotingClient.exe.config
+C:\Users\santhoshke\Batch_June24\CSharp\RemotingServer\RemotingClient\bin\Debug\RemotingClient.exe
+C:\Users\santhoshke\Batch_June24\CSharp\RemotingServer\RemotingClient\bin\Debug\RemotingClient.pdb
+C:\Users\santhoshke\Batch_June24\CSharp\RemotingServer\RemotingClient\bin\Debug\RemotingServer.exe
+C:\Users\santhoshke\Batch_June24\CSharp\RemotingServer\RemotingClient\bin\Debug\RemotingServer.pdb
+C:\Users\santhoshke\Batch_June24\CSharp\RemotingServer\RemotingClient\bin\Debug\RemotingServer.exe.config
+C:\Users\santhoshke\Batch_June24\CSharp\RemotingServer\RemotingClient\obj\Debug\RemotingClient.csproj.CopyComplete
+C:\Users\santhoshke\Batch_June24\CSharp\RemotingServer\RemotingClient\obj\Debug\RemotingClient.exe
+C:\Users\santhoshke\Batch_June24\CSharp\RemotingServer\RemotingClient\obj\Debug\RemotingClient.pdb

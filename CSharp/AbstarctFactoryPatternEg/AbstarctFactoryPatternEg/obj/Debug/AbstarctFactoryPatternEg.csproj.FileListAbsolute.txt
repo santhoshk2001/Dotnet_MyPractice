@@ -1,0 +1,7 @@
+C:\Users\santhoshke\Batch_June24\CSharp\AbstarctFactoryPatternEg\AbstarctFactoryPatternEg\bin\Debug\AbstarctFactoryPatternEg.exe.config
+C:\Users\santhoshke\Batch_June24\CSharp\AbstarctFactoryPatternEg\AbstarctFactoryPatternEg\bin\Debug\AbstarctFactoryPatternEg.exe
+C:\Users\santhoshke\Batch_June24\CSharp\AbstarctFactoryPatternEg\AbstarctFactoryPatternEg\bin\Debug\AbstarctFactoryPatternEg.pdb
+C:\Users\santhoshke\Batch_June24\CSharp\AbstarctFactoryPatternEg\AbstarctFactoryPatternEg\obj\Debug\AbstarctFactoryPatternEg.csproj.AssemblyReference.cache
+C:\Users\santhoshke\Batch_June24\CSharp\AbstarctFactoryPatternEg\AbstarctFactoryPatternEg\obj\Debug\AbstarctFactoryPatternEg.csproj.CoreCompileInputs.cache
+C:\Users\santhoshke\Batch_June24\CSharp\AbstarctFactoryPatternEg\AbstarctFactoryPatternEg\obj\Debug\AbstarctFactoryPatternEg.exe
+C:\Users\santhoshke\Batch_June24\CSharp\AbstarctFactoryPatternEg\AbstarctFactoryPatternEg\obj\Debug\AbstarctFactoryPatternEg.pdb

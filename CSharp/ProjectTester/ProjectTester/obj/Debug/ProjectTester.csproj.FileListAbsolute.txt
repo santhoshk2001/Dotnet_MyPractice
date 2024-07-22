@@ -1,0 +1,7 @@
+C:\Users\santhoshke\Batch_June24\CSharp\ProjectTester\ProjectTester\bin\Debug\ProjectTester.exe.config
+C:\Users\santhoshke\Batch_June24\CSharp\ProjectTester\ProjectTester\bin\Debug\ProjectTester.exe
+C:\Users\santhoshke\Batch_June24\CSharp\ProjectTester\ProjectTester\bin\Debug\ProjectTester.pdb
+C:\Users\santhoshke\Batch_June24\CSharp\ProjectTester\ProjectTester\obj\Debug\ProjectTester.csproj.AssemblyReference.cache
+C:\Users\santhoshke\Batch_June24\CSharp\ProjectTester\ProjectTester\obj\Debug\ProjectTester.csproj.CoreCompileInputs.cache
+C:\Users\santhoshke\Batch_June24\CSharp\ProjectTester\ProjectTester\obj\Debug\ProjectTester.exe
+C:\Users\santhoshke\Batch_June24\CSharp\ProjectTester\ProjectTester\obj\Debug\ProjectTester.pdb

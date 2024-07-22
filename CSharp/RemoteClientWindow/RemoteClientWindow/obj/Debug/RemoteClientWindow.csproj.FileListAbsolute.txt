@@ -1,0 +1,13 @@
+C:\Users\santhoshke\Batch_June24\CSharp\RemoteClientWindow\RemoteClientWindow\bin\Debug\RemoteClientWindow.exe.config
+C:\Users\santhoshke\Batch_June24\CSharp\RemoteClientWindow\RemoteClientWindow\bin\Debug\RemoteClientWindow.exe
+C:\Users\santhoshke\Batch_June24\CSharp\RemoteClientWindow\RemoteClientWindow\bin\Debug\RemoteClientWindow.pdb
+C:\Users\santhoshke\Batch_June24\CSharp\RemoteClientWindow\RemoteClientWindow\bin\Debug\RemoteServer.dll
+C:\Users\santhoshke\Batch_June24\CSharp\RemoteClientWindow\RemoteClientWindow\bin\Debug\RemoteServer.pdb
+C:\Users\santhoshke\Batch_June24\CSharp\RemoteClientWindow\RemoteClientWindow\obj\Debug\RemoteClientWindow.csproj.AssemblyReference.cache
+C:\Users\santhoshke\Batch_June24\CSharp\RemoteClientWindow\RemoteClientWindow\obj\Debug\RemoteClientWindow.Form1.resources
+C:\Users\santhoshke\Batch_June24\CSharp\RemoteClientWindow\RemoteClientWindow\obj\Debug\RemoteClientWindow.Properties.Resources.resources
+C:\Users\santhoshke\Batch_June24\CSharp\RemoteClientWindow\RemoteClientWindow\obj\Debug\RemoteClientWindow.csproj.GenerateResource.cache
+C:\Users\santhoshke\Batch_June24\CSharp\RemoteClientWindow\RemoteClientWindow\obj\Debug\RemoteClientWindow.csproj.CoreCompileInputs.cache
+C:\Users\santhoshke\Batch_June24\CSharp\RemoteClientWindow\RemoteClientWindow\obj\Debug\RemoteClientWindow.csproj.CopyComplete
+C:\Users\santhoshke\Batch_June24\CSharp\RemoteClientWindow\RemoteClientWindow\obj\Debug\RemoteClientWindow.exe
+C:\Users\santhoshke\Batch_June24\CSharp\RemoteClientWindow\RemoteClientWindow\obj\Debug\RemoteClientWindow.pdb

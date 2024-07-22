@@ -1,0 +1,6 @@
+C:\Users\santhoshke\Batch_June24\CSharp\RemoteServer\RemoteServer\bin\Debug\RemoteServer.dll
+C:\Users\santhoshke\Batch_June24\CSharp\RemoteServer\RemoteServer\bin\Debug\RemoteServer.pdb
+C:\Users\santhoshke\Batch_June24\CSharp\RemoteServer\RemoteServer\obj\Debug\RemoteServer.csproj.AssemblyReference.cache
+C:\Users\santhoshke\Batch_June24\CSharp\RemoteServer\RemoteServer\obj\Debug\RemoteServer.csproj.CoreCompileInputs.cache
+C:\Users\santhoshke\Batch_June24\CSharp\RemoteServer\RemoteServer\obj\Debug\RemoteServer.dll
+C:\Users\santhoshke\Batch_June24\CSharp\RemoteServer\RemoteServer\obj\Debug\RemoteServer.pdb

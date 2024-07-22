@@ -1,0 +1,6 @@
+C:\Users\santhoshke\Batch_June24\CSharp\RemotingServer\RemotingServer\bin\Debug\RemotingServer.exe.config
+C:\Users\santhoshke\Batch_June24\CSharp\RemotingServer\RemotingServer\bin\Debug\RemotingServer.exe
+C:\Users\santhoshke\Batch_June24\CSharp\RemotingServer\RemotingServer\bin\Debug\RemotingServer.pdb
+C:\Users\santhoshke\Batch_June24\CSharp\RemotingServer\RemotingServer\obj\Debug\RemotingServer.csproj.CoreCompileInputs.cache
+C:\Users\santhoshke\Batch_June24\CSharp\RemotingServer\RemotingServer\obj\Debug\RemotingServer.exe
+C:\Users\santhoshke\Batch_June24\CSharp\RemotingServer\RemotingServer\obj\Debug\RemotingServer.pdb
