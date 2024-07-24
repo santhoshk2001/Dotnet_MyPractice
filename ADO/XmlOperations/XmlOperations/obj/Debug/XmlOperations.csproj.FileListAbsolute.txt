@@ -1,0 +1,7 @@
+C:\Users\santhoshke\Batch_June24\ADO\XmlOperations\XmlOperations\bin\Debug\XmlOperations.exe.config
+C:\Users\santhoshke\Batch_June24\ADO\XmlOperations\XmlOperations\bin\Debug\XmlOperations.exe
+C:\Users\santhoshke\Batch_June24\ADO\XmlOperations\XmlOperations\bin\Debug\XmlOperations.pdb
+C:\Users\santhoshke\Batch_June24\ADO\XmlOperations\XmlOperations\obj\Debug\XmlOperations.csproj.AssemblyReference.cache
+C:\Users\santhoshke\Batch_June24\ADO\XmlOperations\XmlOperations\obj\Debug\XmlOperations.csproj.CoreCompileInputs.cache
+C:\Users\santhoshke\Batch_June24\ADO\XmlOperations\XmlOperations\obj\Debug\XmlOperations.exe
+C:\Users\santhoshke\Batch_June24\ADO\XmlOperations\XmlOperations\obj\Debug\XmlOperations.pdb

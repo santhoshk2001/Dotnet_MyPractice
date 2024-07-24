@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="InfiniteDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblDepartment">
+    <Key>
+      <PropertyRef Name="DeptNo" />
+    </Key>
+    <Property Name="DeptNo" Type="Int32" Nullable="false" />
+    <Property Name="DeptName" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Budget" Type="Double" />
+    <Property Name="Loc" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tblemployees" Relationship="Self.FK__tblemploy__DeptN__398D8EEE" FromRole="tblDepartment" ToRole="tblemployees" />
+  </EntityType>
+  <EntityType Name="tblemployee">
+    <Key>
+      <PropertyRef Name="Empid" />
+    </Key>
+    <Property Name="Empid" Type="Int32" Nullable="false" />
+    <Property Name="Empname" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Gender" Type="String" MaxLength="7" FixedLength="true" Unicode="false" />
+    <Property Name="Salary" Type="Double" />
+    <Property Name="DeptNo" Type="Int32" />
+    <Property Name="Phoneno" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="City" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Remarks" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tblDepartment" Relationship="Self.FK__tblemploy__DeptN__398D8EEE" FromRole="tblemployees" ToRole="tblDepartment" />
+  </EntityType>
+  <Association Name="FK__tblemploy__DeptN__398D8EEE">
+    <End Role="tblDepartment" Type="Self.tblDepartment" Multiplicity="0..1" />
+    <End Role="tblemployees" Type="Self.tblemployee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblDepartment">
+        <PropertyRef Name="DeptNo" />
+      </Principal>
+      <Dependent Role="tblemployees">
+        <PropertyRef Name="DeptNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="InfiniteDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblDepartments" EntityType="Self.tblDepartment" />
+    <EntitySet Name="tblemployees" EntityType="Self.tblemployee" />
+    <AssociationSet Name="FK__tblemploy__DeptN__398D8EEE" Association="Self.FK__tblemploy__DeptN__398D8EEE">
+      <End Role="tblDepartment" EntitySet="tblDepartments" />
+      <End Role="tblemployees" EntitySet="tblemployees" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

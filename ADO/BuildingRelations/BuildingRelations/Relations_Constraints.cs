@@ -88,10 +88,10 @@ namespace BuildingRelations
             StudentTable.Rows.Add(dr2);
 
             //Uncomment to test primary key violation
-             dr1 = ds.Tables["OurClass"].NewRow();
-            dr1["CId"] = 1; // primary key violation
-            dr1["ClassName"] = "Ninth";
-            ClassTable.Rows.Add(dr1);
+            // dr1 = ds.Tables["OurClass"].NewRow();
+            //dr1["CId"] = 1; // primary key violation
+            //dr1["ClassName"] = "Ninth";
+            //ClassTable.Rows.Add(dr1);
 
             // Uncomment to test foreign key violation
             // dr2 = ds.Tables["Students"].NewRow();

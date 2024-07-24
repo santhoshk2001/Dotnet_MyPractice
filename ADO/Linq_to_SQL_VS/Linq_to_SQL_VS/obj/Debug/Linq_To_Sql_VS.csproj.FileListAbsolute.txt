@@ -1,0 +1,7 @@
+C:\Users\santhoshke\Batch_June24\ADO\Linq_to_SQL_VS\Linq_to_SQL_VS\bin\Debug\Linq_to_SQL_VS.exe.config
+C:\Users\santhoshke\Batch_June24\ADO\Linq_to_SQL_VS\Linq_to_SQL_VS\bin\Debug\Linq_to_SQL_VS.exe
+C:\Users\santhoshke\Batch_June24\ADO\Linq_to_SQL_VS\Linq_to_SQL_VS\bin\Debug\Linq_to_SQL_VS.pdb
+C:\Users\santhoshke\Batch_June24\ADO\Linq_to_SQL_VS\Linq_to_SQL_VS\obj\Debug\Linq_To_Sql_VS.csproj.AssemblyReference.cache
+C:\Users\santhoshke\Batch_June24\ADO\Linq_to_SQL_VS\Linq_to_SQL_VS\obj\Debug\Linq_To_Sql_VS.csproj.CoreCompileInputs.cache
+C:\Users\santhoshke\Batch_June24\ADO\Linq_to_SQL_VS\Linq_to_SQL_VS\obj\Debug\Linq_to_SQL_VS.exe
+C:\Users\santhoshke\Batch_June24\ADO\Linq_to_SQL_VS\Linq_to_SQL_VS\obj\Debug\Linq_to_SQL_VS.pdb

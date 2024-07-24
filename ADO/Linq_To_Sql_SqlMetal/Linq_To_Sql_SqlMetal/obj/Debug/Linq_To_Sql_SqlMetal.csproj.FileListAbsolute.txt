@@ -1,0 +1,7 @@
+C:\Users\santhoshke\Batch_June24\ADO\Linq_To_Sql_SqlMetal\Linq_To_Sql_SqlMetal\bin\Debug\Linq_To_Sql_SqlMetal.exe.config
+C:\Users\santhoshke\Batch_June24\ADO\Linq_To_Sql_SqlMetal\Linq_To_Sql_SqlMetal\bin\Debug\Linq_To_Sql_SqlMetal.exe
+C:\Users\santhoshke\Batch_June24\ADO\Linq_To_Sql_SqlMetal\Linq_To_Sql_SqlMetal\bin\Debug\Linq_To_Sql_SqlMetal.pdb
+C:\Users\santhoshke\Batch_June24\ADO\Linq_To_Sql_SqlMetal\Linq_To_Sql_SqlMetal\obj\Debug\Linq_To_Sql_SqlMetal.csproj.AssemblyReference.cache
+C:\Users\santhoshke\Batch_June24\ADO\Linq_To_Sql_SqlMetal\Linq_To_Sql_SqlMetal\obj\Debug\Linq_To_Sql_SqlMetal.csproj.CoreCompileInputs.cache
+C:\Users\santhoshke\Batch_June24\ADO\Linq_To_Sql_SqlMetal\Linq_To_Sql_SqlMetal\obj\Debug\Linq_To_Sql_SqlMetal.exe
+C:\Users\santhoshke\Batch_June24\ADO\Linq_To_Sql_SqlMetal\Linq_To_Sql_SqlMetal\obj\Debug\Linq_To_Sql_SqlMetal.pdb
