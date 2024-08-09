@@ -1,0 +1,7 @@
+C:\Users\santhoshke\Batch_June24\MiniProj\RailwayReservationSystemDup\RailwayReservationSystemDup\bin\Debug\RailwayReservationSystemDup.exe.config
+C:\Users\santhoshke\Batch_June24\MiniProj\RailwayReservationSystemDup\RailwayReservationSystemDup\bin\Debug\RailwayReservationSystemDup.exe
+C:\Users\santhoshke\Batch_June24\MiniProj\RailwayReservationSystemDup\RailwayReservationSystemDup\bin\Debug\RailwayReservationSystemDup.pdb
+C:\Users\santhoshke\Batch_June24\MiniProj\RailwayReservationSystemDup\RailwayReservationSystemDup\obj\Debug\RailwayReservationSystemDup.csproj.AssemblyReference.cache
+C:\Users\santhoshke\Batch_June24\MiniProj\RailwayReservationSystemDup\RailwayReservationSystemDup\obj\Debug\RailwayReservationSystemDup.csproj.CoreCompileInputs.cache
+C:\Users\santhoshke\Batch_June24\MiniProj\RailwayReservationSystemDup\RailwayReservationSystemDup\obj\Debug\RailwayReservationSystemDup.exe
+C:\Users\santhoshke\Batch_June24\MiniProj\RailwayReservationSystemDup\RailwayReservationSystemDup\obj\Debug\RailwayReservationSystemDup.pdb
