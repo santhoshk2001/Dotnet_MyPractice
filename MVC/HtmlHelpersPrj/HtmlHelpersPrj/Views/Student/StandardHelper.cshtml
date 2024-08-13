@@ -1,0 +1,141 @@
+﻿@{ ViewBag.Title = "StandardHelper";
+                Layout = null; }
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Styled HTML Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        h3 {
+            color: #333;
+            font-size: 1.2em;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .form-control, .custom-select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+        }
+
+            .form-control:focus, .custom-select:focus {
+                border-color: #007bff;
+                outline: none;
+                box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+            }
+
+        .form-check-label {
+            margin-left: 5px;
+        }
+
+        .form-check {
+            margin-bottom: 10px;
+        }
+
+        .form-check-input {
+            margin-right: 5px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+            .form-group h3 {
+                margin-top: 0;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Standard HTML Form</h3>
+
+        <div class="form-group">
+            <h3>Label</h3>
+            @Html.Label("fname", "First Name")
+        </div>
+
+        <div class="form-group">
+            <h3>TextBox</h3>
+            @Html.TextBox("txtfname", "", new { @class = "form-control", placeholder = "First Name" })
+        </div>
+
+        <div class="form-group">
+            <h3>TextArea</h3>
+            @Html.TextArea("address", new { @class = "form-control", rows = 5 })
+        </div>
+
+        <div class="form-group">
+            <h3>Password</h3>
+            @Html.Password("password", "", new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            <h3>RadioButton</h3>
+            @Html.RadioButton("maritalstatus", "Married", new { id = "IsMarried", @class = "form-check-input" })
+            <label for="IsMarried" class="form-check-label">Married?</label>
+        </div>
+
+        <div class="form-group">
+            <h3>CheckBox</h3>
+            @Html.CheckBox("skl1", new { @class = "form-check-input" })
+            <label for="skl1" class="form-check-label">HTML 5</label>
+            <br />
+            @Html.CheckBox("skl2", new { @class = "form-check-input" })
+            <label for="skl2" class="form-check-label">CSS 3</label>
+            <br />
+            @Html.CheckBox("skl3", new { @class = "form-check-input" })
+            <label for="skl3" class="form-check-label">JavaScript</label>
+            <br />
+            @Html.CheckBox("skl4", new { @class = "form-check-input" })
+            <label for="skl4" class="form-check-label">Bootstrap</label>
+        </div>
+
+        <div class="form-group">
+            <h3>List Box</h3>
+            @Html.ListBox("skills", new List<SelectListItem> {
+                new SelectListItem{Text="ASP.Net", Value="1"},
+                new SelectListItem{Text="MVC", Value="2"},
+                new SelectListItem{Text="Angular", Value="3"},
+                new SelectListItem{Text="SQL Server", Value="4"},
+                new SelectListItem{Text="React", Value="5"} },
+                     new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            <h3>Drop Down</h3>
+            @Html.DropDownList("Gender", new List<SelectListItem> {
+                new SelectListItem{Text="Select Gender", Value="-1"},
+                new SelectListItem{Text="Male", Value="1"},
+                new SelectListItem{Text="Female", Value="2"},
+                new SelectListItem{Text="Others", Value="3" },
+            }, new { @class = "custom-select" })
+        </div>
+    </div>
+</body>
+</html>
