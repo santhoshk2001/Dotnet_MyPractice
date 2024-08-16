@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="InfiniteDBModelStoreContainer" CdmEntityContainer="InfiniteDBEntities">
+    <EntitySetMapping Name="Clients">
+      <EntityTypeMapping TypeName="InfiniteDBModel.Client">
+        <MappingFragment StoreEntitySet="Client">
+          <ScalarProperty Name="ClientNo" ColumnName="ClientNo" />
+          <ScalarProperty Name="cName" ColumnName="cName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClientRentals">
+      <EntityTypeMapping TypeName="InfiniteDBModel.ClientRental">
+        <MappingFragment StoreEntitySet="ClientRental">
+          <ScalarProperty Name="ClientNo" ColumnName="ClientNo" />
+          <ScalarProperty Name="cName" ColumnName="cName" />
+          <ScalarProperty Name="propertyNo" ColumnName="propertyNo" />
+          <ScalarProperty Name="pAddress" ColumnName="pAddress" />
+          <ScalarProperty Name="rentStart" ColumnName="rentStart" />
+          <ScalarProperty Name="rentFinish" ColumnName="rentFinish" />
+          <ScalarProperty Name="rent" ColumnName="rent" />
+          <ScalarProperty Name="ownerNo" ColumnName="ownerNo" />
+          <ScalarProperty Name="oName" ColumnName="oName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Owners">
+      <EntityTypeMapping TypeName="InfiniteDBModel.Owner">
+        <MappingFragment StoreEntitySet="Owner">
+          <ScalarProperty Name="ownerNo" ColumnName="ownerNo" />
+          <ScalarProperty Name="oName" ColumnName="oName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="InfiniteDBModel.Product">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="Productname" ColumnName="Productname" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="QuantityAvailable" ColumnName="QuantityAvailable" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductSales">
+      <EntityTypeMapping TypeName="InfiniteDBModel.ProductSale">
+        <MappingFragment StoreEntitySet="ProductSales">
+          <ScalarProperty Name="SaleId" ColumnName="SaleId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="QuantitySold" ColumnName="QuantitySold" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Properties">
+      <EntityTypeMapping TypeName="InfiniteDBModel.Property">
+        <MappingFragment StoreEntitySet="Property">
+          <ScalarProperty Name="propertyNo" ColumnName="propertyNo" />
+          <ScalarProperty Name="pAddress" ColumnName="pAddress" />
+          <ScalarProperty Name="ownerNo" ColumnName="ownerNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rentals">
+      <EntityTypeMapping TypeName="InfiniteDBModel.Rental">
+        <MappingFragment StoreEntitySet="Rental">
+          <ScalarProperty Name="ClientNo" ColumnName="ClientNo" />
+          <ScalarProperty Name="propertyNo" ColumnName="propertyNo" />
+          <ScalarProperty Name="rentStart" ColumnName="rentStart" />
+          <ScalarProperty Name="rentFinish" ColumnName="rentFinish" />
+          <ScalarProperty Name="rent" ColumnName="rent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDepartments">
+      <EntityTypeMapping TypeName="InfiniteDBModel.tblDepartment">
+        <MappingFragment StoreEntitySet="tblDepartment">
+          <ScalarProperty Name="DeptNo" ColumnName="DeptNo" />
+          <ScalarProperty Name="DeptName" ColumnName="DeptName" />
+          <ScalarProperty Name="Budget" ColumnName="Budget" />
+          <ScalarProperty Name="Loc" ColumnName="Loc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblemployees">
+      <EntityTypeMapping TypeName="InfiniteDBModel.tblemployee">
+        <MappingFragment StoreEntitySet="tblemployees">
+          <ScalarProperty Name="Empid" ColumnName="Empid" />
+          <ScalarProperty Name="Empname" ColumnName="Empname" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+          <ScalarProperty Name="DeptNo" ColumnName="DeptNo" />
+          <ScalarProperty Name="Phoneno" ColumnName="Phoneno" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionName="InfiniteDBModel.Store.fn_GetEmployeesbyGender" FunctionImportName="fn_GetEmployeesbyGender">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="InfiniteDBModel.fn_GetEmployeesbyGender_Result">
+          <ScalarProperty Name="Empid" ColumnName="Empid" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Sales" FunctionName="InfiniteDBModel.Store.Sales" />
+    <FunctionImportMapping FunctionImportName="UpdateEmployeeSalary" FunctionName="InfiniteDBModel.Store.UpdateEmployeeSalary">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="InfiniteDBModel.UpdateEmployeeSalary_Result">
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="UpdatedSalary" ColumnName="UpdatedSalary" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

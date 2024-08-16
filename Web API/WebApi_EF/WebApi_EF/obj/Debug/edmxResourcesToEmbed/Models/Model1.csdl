@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="InfiniteDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <ComplexType Name="fn_GetEmployeesbyGender_Result">
+    <Property Name="Empid" Type="Int32" />
+    <Property Name="EmployeeName" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Gender" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+  </ComplexType>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="ClientNo" />
+    </Key>
+    <Property Name="ClientNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Rentals" Relationship="Self.FK__Rental__ClientNo__30C33EC3" FromRole="Client" ToRole="Rental" />
+  </EntityType>
+  <EntityType Name="ClientRental">
+    <Key>
+      <PropertyRef Name="ClientNo" />
+      <PropertyRef Name="propertyNo" />
+      <PropertyRef Name="rentStart" />
+      <PropertyRef Name="rentFinish" />
+    </Key>
+    <Property Name="ClientNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="propertyNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="pAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="rentStart" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="rentFinish" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="rent" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="ownerNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="oName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Owner">
+    <Key>
+      <PropertyRef Name="ownerNo" />
+    </Key>
+    <Property Name="ownerNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="oName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ProductId" />
+    </Key>
+    <Property Name="ProductId" Type="Int32" Nullable="false" />
+    <Property Name="Productname" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Price" Type="Int32" />
+    <Property Name="QuantityAvailable" Type="Int32" />
+    <NavigationProperty Name="ProductSales" Relationship="Self.FK__ProductSa__Produ__6C190EBB" FromRole="Products" ToRole="ProductSales" />
+  </EntityType>
+  <EntityType Name="ProductSale">
+    <Key>
+      <PropertyRef Name="SaleId" />
+    </Key>
+    <Property Name="SaleId" Type="Int32" Nullable="false" />
+    <Property Name="ProductId" Type="Int32" />
+    <Property Name="QuantitySold" Type="Int32" />
+    <NavigationProperty Name="Product" Relationship="Self.FK__ProductSa__Produ__6C190EBB" FromRole="ProductSales" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="Property">
+    <Key>
+      <PropertyRef Name="propertyNo" />
+    </Key>
+    <Property Name="propertyNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="pAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ownerNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Rentals" Relationship="Self.FK__Rental__property__31B762FC" FromRole="Property" ToRole="Rental" />
+  </EntityType>
+  <EntityType Name="Rental">
+    <Key>
+      <PropertyRef Name="ClientNo" />
+      <PropertyRef Name="propertyNo" />
+      <PropertyRef Name="rentStart" />
+      <PropertyRef Name="rentFinish" />
+    </Key>
+    <Property Name="ClientNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="propertyNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rentStart" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="rentFinish" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="rent" Type="Decimal" Precision="10" Scale="2" />
+    <NavigationProperty Name="Client" Relationship="Self.FK__Rental__ClientNo__30C33EC3" FromRole="Rental" ToRole="Client" />
+    <NavigationProperty Name="Property" Relationship="Self.FK__Rental__property__31B762FC" FromRole="Rental" ToRole="Property" />
+  </EntityType>
+  <EntityType Name="tblDepartment">
+    <Key>
+      <PropertyRef Name="DeptNo" />
+    </Key>
+    <Property Name="DeptNo" Type="Int32" Nullable="false" />
+    <Property Name="DeptName" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Budget" Type="Double" />
+    <Property Name="Loc" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tblemployees" Relationship="Self.FK__tblemploy__DeptN__398D8EEE" FromRole="tblDepartment" ToRole="tblemployees" />
+  </EntityType>
+  <EntityType Name="tblemployee">
+    <Key>
+      <PropertyRef Name="Empid" />
+    </Key>
+    <Property Name="Empid" Type="Int32" Nullable="false" />
+    <Property Name="Empname" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Gender" Type="String" MaxLength="7" FixedLength="true" Unicode="false" />
+    <Property Name="Salary" Type="Double" />
+    <Property Name="DeptNo" Type="Int32" />
+    <Property Name="Phoneno" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="City" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Remarks" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tblDepartment" Relationship="Self.FK__tblemploy__DeptN__398D8EEE" FromRole="tblemployees" ToRole="tblDepartment" />
+  </EntityType>
+  <Association Name="FK__Rental__ClientNo__30C33EC3">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="Rental" Type="Self.Rental" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="ClientNo" />
+      </Principal>
+      <Dependent Role="Rental">
+        <PropertyRef Name="ClientNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ProductSa__Produ__6C190EBB">
+    <End Role="Products" Type="Self.Product" Multiplicity="0..1" />
+    <End Role="ProductSales" Type="Self.ProductSale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="ProductSales">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Rental__property__31B762FC">
+    <End Role="Property" Type="Self.Property" Multiplicity="1" />
+    <End Role="Rental" Type="Self.Rental" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Property">
+        <PropertyRef Name="propertyNo" />
+      </Principal>
+      <Dependent Role="Rental">
+        <PropertyRef Name="propertyNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblemploy__DeptN__398D8EEE">
+    <End Role="tblDepartment" Type="Self.tblDepartment" Multiplicity="0..1" />
+    <End Role="tblemployees" Type="Self.tblemployee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblDepartment">
+        <PropertyRef Name="DeptNo" />
+      </Principal>
+      <Dependent Role="tblemployees">
+        <PropertyRef Name="DeptNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="InfiniteDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Clients" EntityType="Self.Client" />
+    <EntitySet Name="ClientRentals" EntityType="Self.ClientRental" />
+    <EntitySet Name="Owners" EntityType="Self.Owner" />
+    <EntitySet Name="Products" EntityType="Self.Product" />
+    <EntitySet Name="ProductSales" EntityType="Self.ProductSale" />
+    <EntitySet Name="Properties" EntityType="Self.Property" />
+    <EntitySet Name="Rentals" EntityType="Self.Rental" />
+    <EntitySet Name="tblDepartments" EntityType="Self.tblDepartment" />
+    <EntitySet Name="tblemployees" EntityType="Self.tblemployee" />
+    <AssociationSet Name="FK__Rental__ClientNo__30C33EC3" Association="Self.FK__Rental__ClientNo__30C33EC3">
+      <End Role="Client" EntitySet="Clients" />
+      <End Role="Rental" EntitySet="Rentals" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ProductSa__Produ__6C190EBB" Association="Self.FK__ProductSa__Produ__6C190EBB">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="ProductSales" EntitySet="ProductSales" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Rental__property__31B762FC" Association="Self.FK__Rental__property__31B762FC">
+      <End Role="Property" EntitySet="Properties" />
+      <End Role="Rental" EntitySet="Rentals" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblemploy__DeptN__398D8EEE" Association="Self.FK__tblemploy__DeptN__398D8EEE">
+      <End Role="tblDepartment" EntitySet="tblDepartments" />
+      <End Role="tblemployees" EntitySet="tblemployees" />
+    </AssociationSet>
+    <FunctionImport Name="fn_GetEmployeesbyGender" IsComposable="true" ReturnType="Collection(InfiniteDBModel.fn_GetEmployeesbyGender_Result)">
+      <Parameter Name="gender" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Sales">
+      <Parameter Name="pid" Mode="In" Type="Int32" />
+      <Parameter Name="qty_to_sell" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="UpdateEmployeeSalary" ReturnType="Collection(InfiniteDBModel.UpdateEmployeeSalary_Result)">
+      <Parameter Name="empid" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="UpdateEmployeeSalary_Result">
+    <Property Type="String" Name="EmployeeName" Nullable="true" MaxLength="40" />
+    <Property Type="Double" Name="UpdatedSalary" Nullable="true" />
+  </ComplexType>
+</Schema>

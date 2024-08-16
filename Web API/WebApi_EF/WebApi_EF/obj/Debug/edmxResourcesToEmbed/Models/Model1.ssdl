@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="InfiniteDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="ClientNo" />
+    </Key>
+    <Property Name="ClientNo" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="cName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ClientRental">
+    <Key>
+      <PropertyRef Name="ClientNo" />
+      <PropertyRef Name="propertyNo" />
+      <PropertyRef Name="rentStart" />
+      <PropertyRef Name="rentFinish" />
+    </Key>
+    <Property Name="ClientNo" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="cName" Type="varchar" MaxLength="50" />
+    <Property Name="propertyNo" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="pAddress" Type="varchar" MaxLength="100" />
+    <Property Name="rentStart" Type="date" Nullable="false" />
+    <Property Name="rentFinish" Type="date" Nullable="false" />
+    <Property Name="rent" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="ownerNo" Type="varchar" MaxLength="10" />
+    <Property Name="oName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'InfiniteDB.dbo.Employee_Audit' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Employee_Audit">
+          <Property Name="Msg" Type="varchar(max)" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'InfiniteDB.dbo.Employee_delete' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Employee_delete">
+          <Property Name="Msg" Type="varchar(max)" />
+        </EntityType>-->
+  <EntityType Name="Owner">
+    <Key>
+      <PropertyRef Name="ownerNo" />
+    </Key>
+    <Property Name="ownerNo" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="oName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="ProductId" />
+    </Key>
+    <Property Name="ProductId" Type="int" Nullable="false" />
+    <Property Name="Productname" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Price" Type="int" />
+    <Property Name="QuantityAvailable" Type="int" />
+  </EntityType>
+  <EntityType Name="ProductSales">
+    <Key>
+      <PropertyRef Name="SaleId" />
+    </Key>
+    <Property Name="SaleId" Type="int" Nullable="false" />
+    <Property Name="ProductId" Type="int" />
+    <Property Name="QuantitySold" Type="int" />
+  </EntityType>
+  <EntityType Name="Property">
+    <Key>
+      <PropertyRef Name="propertyNo" />
+    </Key>
+    <Property Name="propertyNo" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="pAddress" Type="varchar" MaxLength="100" />
+    <Property Name="ownerNo" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Rental">
+    <Key>
+      <PropertyRef Name="ClientNo" />
+      <PropertyRef Name="propertyNo" />
+      <PropertyRef Name="rentStart" />
+      <PropertyRef Name="rentFinish" />
+    </Key>
+    <Property Name="ClientNo" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="propertyNo" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="rentStart" Type="date" Nullable="false" />
+    <Property Name="rentFinish" Type="date" Nullable="false" />
+    <Property Name="rent" Type="decimal" Precision="10" Scale="2" />
+  </EntityType>
+  <EntityType Name="tblDepartment">
+    <Key>
+      <PropertyRef Name="DeptNo" />
+    </Key>
+    <Property Name="DeptNo" Type="int" Nullable="false" />
+    <Property Name="DeptName" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Budget" Type="float" />
+    <Property Name="Loc" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="tblemployees">
+    <Key>
+      <PropertyRef Name="Empid" />
+    </Key>
+    <Property Name="Empid" Type="int" Nullable="false" />
+    <Property Name="Empname" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="Gender" Type="char" MaxLength="7" />
+    <Property Name="Salary" Type="float" />
+    <Property Name="DeptNo" Type="int" />
+    <Property Name="Phoneno" Type="varchar" MaxLength="10" />
+    <Property Name="City" Type="varchar" MaxLength="30" />
+    <Property Name="Remarks" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <Association Name="FK__ProductSa__Produ__6C190EBB">
+    <End Role="Products" Type="Self.Products" Multiplicity="0..1" />
+    <End Role="ProductSales" Type="Self.ProductSales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="ProductSales">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Rental__ClientNo__30C33EC3">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="Rental" Type="Self.Rental" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="ClientNo" />
+      </Principal>
+      <Dependent Role="Rental">
+        <PropertyRef Name="ClientNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Rental__property__31B762FC">
+    <End Role="Property" Type="Self.Property" Multiplicity="1" />
+    <End Role="Rental" Type="Self.Rental" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Property">
+        <PropertyRef Name="propertyNo" />
+      </Principal>
+      <Dependent Role="Rental">
+        <PropertyRef Name="propertyNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblemploy__DeptN__398D8EEE">
+    <End Role="tblDepartment" Type="Self.tblDepartment" Multiplicity="0..1" />
+    <End Role="tblemployees" Type="Self.tblemployees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblDepartment">
+        <PropertyRef Name="DeptNo" />
+      </Principal>
+      <Dependent Role="tblemployees">
+        <PropertyRef Name="DeptNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="AddTwoNumbers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int">
+    <Parameter Name="num1" Type="int" Mode="In" />
+    <Parameter Name="num2" Type="int" Mode="In" />
+  </Function>
+  <Function Name="CalculateRectangleArea" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="float">
+    <Parameter Name="length" Type="float" Mode="In" />
+    <Parameter Name="width" Type="float" Mode="In" />
+  </Function>
+  <Function Name="count_male_employees" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="fn_GetEmployeesbyGender" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="gender" Type="varchar" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="Empid" Type="int" />
+          <Property Name="EmployeeName" Type="varchar" MaxLength="40" />
+          <Property Name="Gender" Type="varchar" MaxLength="7" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="Sales" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="pid" Type="int" Mode="In" />
+    <Parameter Name="qty_to_sell" Type="int" Mode="In" />
+  </Function>
+  <Function Name="UpdateEmployeeSalary" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="empid" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="InfiniteDBModelStoreContainer">
+    <EntitySet Name="Client" EntityType="Self.Client" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ClientRental" EntityType="Self.ClientRental" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Owner" EntityType="Self.Owner" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Products" EntityType="Self.Products" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductSales" EntityType="Self.ProductSales" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Property" EntityType="Self.Property" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Rental" EntityType="Self.Rental" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblDepartment" EntityType="Self.tblDepartment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblemployees" EntityType="Self.tblemployees" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__ProductSa__Produ__6C190EBB" Association="Self.FK__ProductSa__Produ__6C190EBB">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="ProductSales" EntitySet="ProductSales" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Rental__ClientNo__30C33EC3" Association="Self.FK__Rental__ClientNo__30C33EC3">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Rental" EntitySet="Rental" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Rental__property__31B762FC" Association="Self.FK__Rental__property__31B762FC">
+      <End Role="Property" EntitySet="Property" />
+      <End Role="Rental" EntitySet="Rental" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblemploy__DeptN__398D8EEE" Association="Self.FK__tblemploy__DeptN__398D8EEE">
+      <End Role="tblDepartment" EntitySet="tblDepartment" />
+      <End Role="tblemployees" EntitySet="tblemployees" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

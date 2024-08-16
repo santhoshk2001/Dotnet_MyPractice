@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e29de228907c415cbeee9bbb09fd50f8" Name="Diagram1">
+        <EntityTypeShape EntityType="InfiniteDBModel.Client" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="InfiniteDBModel.ClientRental" Width="1.5" PointX="7.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="InfiniteDBModel.Owner" Width="1.5" PointX="7.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="InfiniteDBModel.Product" Width="1.5" PointX="5.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="InfiniteDBModel.ProductSale" Width="1.5" PointX="8" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="InfiniteDBModel.Property" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="InfiniteDBModel.Rental" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="InfiniteDBModel.tblDepartment" Width="1.5" PointX="2.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="InfiniteDBModel.tblemployee" Width="1.5" PointX="5" PointY="5" IsExpanded="true" />
+        <AssociationConnector Association="InfiniteDBModel.FK__Rental__ClientNo__30C33EC3" ManuallyRouted="false" />
+        <AssociationConnector Association="InfiniteDBModel.FK__ProductSa__Produ__6C190EBB" ManuallyRouted="false" />
+        <AssociationConnector Association="InfiniteDBModel.FK__Rental__property__31B762FC" ManuallyRouted="false" />
+        <AssociationConnector Association="InfiniteDBModel.FK__tblemploy__DeptN__398D8EEE" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
